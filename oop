@@ -1,0 +1,7 @@
+object oriented programming:
+
+- encapsulation : wrapping data and methods that work on data within one unit
+
+                  puts restrictions on accessing variables directly - prevents u from changing data accidently 
+
+                  a "class" is an encapsulation : encapsulates all it's variables, member functions, etc.
