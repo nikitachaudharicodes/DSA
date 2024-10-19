@@ -1,0 +1,8 @@
+python:
+
+- object oriented language.
+- created in 1991 by guido van rossum : v cool guy: https://gvanrossum.github.io
+- automatic garbage collection : no malloc or dealloc required like C - uses reference count - https://www.geeksforgeeks.org/garbage-collection-python/
+- dynamically typed : do not need to declare variable type while writing code - python determines them at runtime
+- interpreted language
+- has a standard library 
