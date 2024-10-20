@@ -1,0 +1,49 @@
+Radix sort:
+
+- rather than comparing, it puts elements in buckets based on the value.
+- key idea : exploit concept of place value 
+
+two types: 1. least significant digit(lsd) radix sort
+           2. most significant digit(msd) radix sort
+
+
+
+msd radix sort:
+if 802 is max... 3 digits... so thrice iteration - one for each significant place.
+
+sort elements based on units place. X=0
+use a stable sorting technique - counting sort. to sort digits at each significant place. [https://www.geeksforgeeks.org/counting-sort/] - way of sorting elements in an array by utilising the number of occurences of each number in the array.
+
+    - reason to use counting sort: smaller range of values (0-9) as we''re only checking significant place.  
+
+
+sort elements based on tens place. X=1
+
+""
+
+sort elements based on hundreds place. X=2
+
+""
+
+== > array should now be sorted in ascending order.
+
+
+
+TIME COMPLEXITY:
+  - non-comparitive integer sorting algo.
+  - sorts data with integer keys by grouping keys by individual digits which share the same significant position and value.
+  - O(d*(n+b)) 
+              - d is number of digits.
+              - n is number of elements.
+              - b is base of the number system being used. [binary: 2; octal: 8; decimal: 10; hexadecimal: 16] [also called radix of the number system]
+
+  - radix is faster than comparision based sorting algorithms like quicksort or mergesort - esp for large datasets when keys have many digits.
+  - time complexity grows linearly with number of digits. -> for quick and merge, it grows logarithmically which is much more significant.
+  - not as efficient for small datasets.
+
+SPACE COMPLEXITY:
+  - O(n+b) 
+          - n is number of elements
+          - b is base of the number system being used
+  - space complexity arises frm the bucket creation for each digit value + copying the elements back to the original array after each digit is sorted.
+
