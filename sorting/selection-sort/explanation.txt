@@ -1,0 +1,29 @@
+selection sort is a comparision based algorithm
+
+- sorts by repeatedly selecting the smallest/largest element from the UNsorted portion & swapping with the first element in the UNsorted portion
+
+- continue till array sorted
+
+
+- only work with UNsorted portion for each run. 
+- eventually will keep sorting all as u keep swapping
+
+TIME COMPLEXITY: O(n^2) 
+
+2 loops: 
+
+1. select element of array one by one : O(n)
+2. compare with every other array element : O(n)
+
+== O(n)*O(n) = O(n*n) = O(n^2)
+
+space: O(1)  only temporary variables. 
+
+disadvantages: 
+slower than merge sort and quick sort.
+does not maintain relative order of equal elements.
+
+
+advantages:
+simple, easy
+small datasets - small keys, large objects
