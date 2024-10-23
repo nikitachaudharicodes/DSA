@@ -1,0 +1,35 @@
+init is  a special method in python class:
+
+called automatically when u create an instance of a class
+
+job is to initialize the attributes or properties of an object
+
+also called 'initializer' or 'constructor' method
+
+
+Basic syntax:
+
+class MyClass:
+      def _init(self, arg1, arg2, arg3...):
+        #initialization code here
+          
+
+  'self' parameter above refers to the instance of the object being created.
+  you can pass any other arguments you need.
+
+  Example:
+
+  class MyCat:
+      def _init(self, name, age):
+        self.name = name
+        self.age = age
+
+  #create an instance of the MyDog class
+  my_cat = Dog("Miso", 6)
+
+  #the init method is automatically called - takes the parameters -name, age- and assigns them as attributes to the object my_cat
+
+  USES:
+  set up default values 
+  validate input data when creating objects
+  good place to define instance specific attributes
