@@ -1,3 +1,48 @@
 #this is quicksort.
 
 divide and conquer algorithm 
+
+
+it picks an element as a pivot & partitions the given array around the picked pivot. 
+
+places the pivot in its correct position in the sorted array
+
+
+1. choose a pivot. : select an element from the array. 
+                            - can be first element
+                            - last element, random element, or median
+2. partition the array: rearrange the array around the pivot. 
+                        all elements smaller than the pivot will be on its left. 
+                        """ greater than the pivot to its right. 
+                        - pivot is then in its correct position. we obtain the index of the pivot. 
+
+3. recursively call: recursively apply the same process to the two partitioned sub-arrays (left and right of the pivot)
+
+4. base case: recursion stops when there is only one element left in the sub-array... 
+
+
+
+----------
+different pivot choices:
+
+a. first/last element: worst case when array is alr sorted.
+b. random: preferred approach. no pattern for when worst case happens.
+c. median: idel time complexity - can find median in linear time. 
+
+-----
+
+Time complexity:
+best: Ω(nlogn) - when pivot divides in half     [Ω - omega - lower bound of an algo's performance. min amt of time or space an algo will take in the best-case scenario.]
+average: θ((nlogn) - pivot divides array in two parts but not necessarily equal [θ - theta - represents tight bound of an algo's performance. exact of expected behaviour of an algo when averaged over all possible inputs. growth rate will neither be better not worse in most cases]
+worst: O(n^2) - when smallest or largest is always chosen as pivot [O - big O - upper bound of an algo's performance. maximum amount of time or space an algo might take in the worst-case scenario. complexity of algo can grow as fast as n^2 in the worst case but it will not exceed this rate.]
+
+-----
+
+advantages:
+- efficient on large datasets
+- low overhead - small amt of memory to function
+- cache friendly
+- tail recursive 
+
+
+
