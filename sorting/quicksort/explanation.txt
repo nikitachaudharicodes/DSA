@@ -1,0 +1,3 @@
+#this is quicksort.
+
+divide and conquer algorithm 
